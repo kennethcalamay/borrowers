@@ -1,4 +1,10 @@
+div
+  h2 Friend details
+  p= model.firstName
+  p= model.lastName
+
 form submit="save"
+  h2= errorMessage
   p
     label
       | First Name: 
