@@ -1,0 +1,5 @@
+h1 Friends Index
+
+ul
+  each friend in model
+    li #{friend.firstName} #{friend.lastName}
