@@ -1,0 +1,20 @@
+form submit="save"
+  p
+    label
+      | First Name: 
+      = input value=model.firstName
+  p
+    label
+      | Last Name: 
+      = input value=model.lastName
+  p
+    label
+      | Email: 
+      = input value=model.email
+  p
+    label
+      | Twitter:
+      = input value=model.twitter
+  input type='submit' value='Save'
+  button click="cancel" Cancel
+
