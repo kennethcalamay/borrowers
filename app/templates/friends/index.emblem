@@ -1,5 +1,7 @@
 h1 Friends Index
+/ The context here is the controller
+h2 Total friends: #{model.length}
 
 ul
   each friend in model
-    li #{friend.firstName} #{friend.lastName}
+    li #{friend.id} - #{friend.firstName} #{friend.lastName}
