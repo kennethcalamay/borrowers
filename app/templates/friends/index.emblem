@@ -4,4 +4,5 @@ h2 Total friends: #{model.length}
 
 ul
   each friend in model
-    li #{friend.id} - #{friend.firstName} #{friend.lastName}
+    li 
+      link-to friend.fullName 'friends.show' friend

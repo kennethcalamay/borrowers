@@ -7,5 +7,6 @@ Router = Ember.Router.extend
 Router.map ->
   this.resource 'friends', ->
     this.route('new')
+    this.route('show', {path: ':friend_id'})
 
 `export default Router`
