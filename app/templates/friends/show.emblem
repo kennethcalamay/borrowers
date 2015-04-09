@@ -1,0 +1,5 @@
+ul
+  li First Name: #{ model.firstName }
+  li Last Name: #{ model.lastName }
+  li Email: #{ model.email }
+  li twitter: #{ model.twitter }
