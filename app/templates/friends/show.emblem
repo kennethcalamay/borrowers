@@ -3,5 +3,6 @@ ul
   li Last Name: #{ model.lastName }
   li Email: #{ model.email }
   li twitter: #{ model.twitter }
+  li: link-to "Edit Info" "friends.edit" model
 
 link-to 'Back' 'friends'
