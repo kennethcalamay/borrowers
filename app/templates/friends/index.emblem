@@ -1,8 +1,14 @@
 h1 Friends Index
-/ The context here is the controller
+
 h2 Total friends: #{model.length}
 
-ul
-  each friend in model
-    li 
-      link-to friend.fullName 'friends.show' friend
+table
+  thead
+    tr
+      th Name
+      th
+  tbody
+    each friend in model
+      tr
+        td: link-to friend.fullName 'friends.show' friend
+        td: a{action 'delete' friend} href="#" Delete
