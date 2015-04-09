@@ -1,26 +1,10 @@
-div
-  h2 Friend details
-  p= model.firstName
-  p= model.lastName
-
 form submit="save"
   h2= errorMessage
-  p
-    label
-      | First Name: 
-      = input value=model.firstName
-  p
-    label
-      | Last Name: 
-      = input value=model.lastName
-  p
-    label
-      | Email: 
-      = input value=model.email
-  p
-    label
-      | Twitter:
-      = input value=model.twitter
-  input type='submit' value='Save'
-  button click="cancel" Cancel
+  fieldset
+    = input value=model.firstName placeholder="First Name": br
+    = input value=model.lastName  placeholder="Last Name": br
+    = input value=model.email     placeholder="email": br
+    = input value=model.twitter   placeholder="twitter": br
+    input.primary type='submit' value='Save'
+    button click="cancel" Cancel
 
