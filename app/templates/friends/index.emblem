@@ -10,5 +10,5 @@ table.primary
   tbody
     each friend in model
       tr
-        td: link-to friend.fullName 'friends.show' friend
+        td: link-to friend.fullName 'articles' friend
         td: a{action 'delete' friend} href="#" Delete

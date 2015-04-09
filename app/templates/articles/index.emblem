@@ -1,0 +1,15 @@
+table.primary
+  thead
+    tr
+      th Description
+      th Borrowed since
+      th
+      th
+  tbody
+    each article in model
+      tr
+        td= article.description
+        td= article.createdAt
+        td
+        td
+

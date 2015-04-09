@@ -2,6 +2,7 @@
 `import Ember from 'ember'`
 
 Friend = DS.Model.extend
+  articles:          DS.hasMany 'article'
   firstName:         DS.attr 'string'
   lastName:          DS.attr 'string'
   email:             DS.attr 'string'
