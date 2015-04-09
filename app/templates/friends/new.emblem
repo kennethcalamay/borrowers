@@ -1,2 +1,4 @@
 h1 Add a New Friend
 partial "friends/form"
+
+link-to 'Back' 'friends'
