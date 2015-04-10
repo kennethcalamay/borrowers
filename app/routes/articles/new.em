@@ -9,7 +9,7 @@ ArticlesNewRoute = Ember.Route.extend
       that = this
       model = @modelFor('articles/new')
       model.save().then ->
-        @transitionTo 'articles'
+        that.transitionTo 'articles'
       false
     cancel: ->
       @transitionTo 'articles'

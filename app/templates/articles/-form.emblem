@@ -3,6 +3,6 @@ form
   fieldset
     = input value=model.description placeholder="Description": br
     = input value=model.notes placeholder="Notes": br
-    button.primary click=save Save
-    button click=cancel
+    button.primary click="save" Save
+    button click="cancel" Cancel
 
